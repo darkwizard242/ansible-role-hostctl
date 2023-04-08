@@ -1,0 +1,13 @@
+---
+# tasks file for hostctl | Debian/Ubuntu Family
+
+- name: Debian/Ubuntu Family | Downloading and extracting {{ hostctl_app }} {{ hostctl_version }}
+  ansible.builtin.unarchive:
+    src: "{{ hostctl_dl_url }}"
+    dest: "{{ hostctl_bin_path }}"
+    extra_opts:
+      - hostctl
+    remote_src: yes
+    owner: "{{ hostctl_file_owner }}"
+    group: "{{ hostctl_file_group }}"
+    mode: "{{ hostctl_file_permission_mode }}"
