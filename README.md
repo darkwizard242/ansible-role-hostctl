@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 hostctl_app: hostctl
-hostctl_version: 1.1.3
+hostctl_version: 1.1.4
 hostctl_os: linux
 hostctl_arch: 64-bit
 hostctl_dl_url: https://github.com/guumaster/{{ hostctl_app }}/releases/download/v{{ hostctl_version }}/hostctl_{{ hostctl_version }}_{{ hostctl_os }}_{{ hostctl_arch }}.tar.gz
@@ -31,7 +31,7 @@ hostctl_file_permission_mode: '0755'
 Variable                     | Description
 ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------
 hostctl_app                  | Defines the app to install i.e. **hostctl**
-hostctl_version              | Defined to dynamically fetch the desired version to install. Defaults to: **1.1.3**
+hostctl_version              | Defined to dynamically fetch the desired version to install. Defaults to: **1.1.4**
 hostctl_os                   | Defines os type. Defaults to: **linux**
 hostctl_arch                 | Defines os architecture. Defaults to: **64-bit**
 hostctl_dl_url               | Defines URL to download the hostctl binary from.
